@@ -19,7 +19,6 @@ namespace SalesOrderApi.Controllers
             _salesOrderService = salesOrderService;
         }
 
-        [AllowAnonymous]
         [HttpGet]
         [Route("Search")]
         public async Task<IActionResult> Search([FromQuery]SearchRequest request)
