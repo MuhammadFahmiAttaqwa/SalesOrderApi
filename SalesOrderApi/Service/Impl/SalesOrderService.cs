@@ -35,7 +35,7 @@ namespace SalesOrderApi.Service.Impl
                     ITEM_NAME = x.ItemName,
                     QUANTITY = (int)x.Quantity,
                     PRICE = (double)x.Price,
-                    SO_ORDER_ID = (int)x.Price
+                    SO_ORDER_ID = (int)x.OrderId,
                 }).ToList();
 
                 await _salesOrderRepository.AddOrUpdate(soOrder, Item, or);
